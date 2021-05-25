@@ -6,14 +6,12 @@ contacts = [
     {
         'id':1,
         'name':u'Raju',
-        'phone no':u'9987644456',
-        'done':False
+        'phone no':u'9987644456'
     },
     {
         'id':2,
         'name':u'Rahul',
-        'phone no':u'9876543222',
-        'done':False
+        'phone no':u'9876543222'
     }
 ]
 
@@ -29,8 +27,7 @@ def add_contact():
     contact  = {
         'id':contacts[-1]['id']+1,
         'name':request.json['name'],
-        'phone no':request.json.get('phone no',''),
-        'done':False
+        'phone no':request.json.get('phone no','')
     }
 
     contacts.append(contact)
